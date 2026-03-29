@@ -56,7 +56,7 @@
 
             {{-- LINK CADASTRAR --}}
             <div class="text-gray-400 flex justify-center">
-                <p>Ainda não tem uma conta? <a href="#" class="text-blue-600 hover:underline ml-2">Cadastrar-se</a></p>
+                <p>Ainda não tem uma conta? <a href="{{route('register')}}" class="text-blue-600 hover:underline ml-2">Cadastrar-se</a></p>
             </div>
         </form>
         {{-- =================================================================== --}}
