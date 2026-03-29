@@ -5,12 +5,12 @@
 @endsection
 
 @section('content')
-    <main class="bg-zinc-100 w-full flex justify-center items-center p-8">
+    <main class="bg-zinc-100 w-full flex justify-center items-center p-4 md:p-10">
         {{-- =================================================================== --}}
         {{-- FORM  --}}
         {{-- =================================================================== --}}
         <form action=""
-            class="bg-white flex justify-center items-center flex-col py-12 px-18 gap-8 w-full max-w-xl shadow-[40px_40px_60px_0px_rgba(228,230,234,0.74)] rounded-[20px]">
+            class="bg-white flex justify-center items-center flex-col py-6 md:py-12 px-6 md:px-18 gap-8 w-full max-w-xl shadow-[40px_40px_60px_0px_rgba(228,230,234,0.74)] rounded-[20px]">
             @csrf
 
             {{-- título --}}
