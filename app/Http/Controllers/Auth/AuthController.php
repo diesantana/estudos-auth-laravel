@@ -42,8 +42,18 @@ class AuthController extends Controller
     /**
      * Faz o logout, finalizando a sessão do usuário
      */
-    public function destroy(string $id)
+    public function destroy(Request $request)
     {
-        //
+        // Efetua o logout do guard 'web' (o padrão).
+        Auth::guard('web')->logout();
+
+        // Invalida a sessão atual do usuário.
+        $request->session()->invalidate();
+
+        // Gera um novo token CSRF para a próxima sessão.
+        $request->session()->regenerateToken();
+
+        // Redireciona o usuário para a página inicial.
+        return redirect('/');
     }
 }
